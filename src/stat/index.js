@@ -61,6 +61,7 @@ document.getElementById("submit").addEventListener("click", (e) => {
         endBtn.disabled = false;
 
         postInterval = setInterval(() => {
+            if (exit) return clearInterval(postInterval)
             fetch("/api/sched", {
                 mode: 'cors',
                 headers: {
