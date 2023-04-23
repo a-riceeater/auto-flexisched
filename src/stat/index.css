@@ -86,3 +86,20 @@ input {
 #footer a {
     color: lightgray;
 }
+
+#im {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 80%;
+    background-color: rgb(27, 27, 27);
+    z-index: 2;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+#im p {
+    color: lightgray;
+}

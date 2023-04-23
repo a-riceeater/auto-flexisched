@@ -36,7 +36,7 @@ app.post("/api/sched", (req, res) => {
     const endpoint = req.body.endpoint;
     const interval = req.body.interval;
 
-    if (!token || !fname || !lname || !day || !endpoint || !interval) return res.send({ error: true, message: "Invalid form body!" });
+    if (!token || !fname || !lname || !day || !endpoint || !interval) return res.send({ error: true, message: "Invalid form body! (missing inputs)" });
 
     if (parseInt(interval) < 5000) return res.send({ error: true, message: "Invalid interval!" })
 

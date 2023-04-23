@@ -151,3 +151,12 @@ endBtn.addEventListener("click", (e) => {
     finish()
     exit = false;
 })
+
+const modal = document.getElementById("im");
+document.getElementById("ati").addEventListener("mouseover", (e) => {
+    modal.style.display = "block"
+})
+
+document.getElementById("ati").addEventListener("mouseleave", (e) => {
+    modal.style.display = "none"
+})

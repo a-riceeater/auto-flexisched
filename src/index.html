@@ -39,7 +39,7 @@
 
         <br><br><br>
 
-        <span style="color: rgb(187, 185, 185);">Authentication Token (recieved from cookies)</span>
+        <span style="color: rgb(187, 185, 185); cursor: pointer;" id="ati">Authentication Token (recieved from cookies) (hover for info)</span>
 
         <br>
 
@@ -62,6 +62,14 @@
         Created under the
         <a href="/license"> MIT License.</a>
     </p>
+
+    <div id="im" style="display: none;">
+        <h1 style="font-size: 19px">How do I get the token?</h1>
+        <p>Navigate to your flexisched dashboard (and login).</p>
+        <p>Click the lock 🔒 symbol to the left of the URL. Then press cookies 🍪.</p>
+        <p>Find the cookie named <code>flexisched_session_id</code> and copy the content.</p>
+        <img src="ex.png" alt="Example" draggable="false">
+    </div>
 
     <script src="https://forge.darthvader1925.repl.co/forge.js"></script>
     <script src="./index.js"></script>
