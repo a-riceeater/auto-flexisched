@@ -30,7 +30,7 @@ input {
 }
 
 .dft-label {
-    color: gray;
+    color: rgb(187, 185, 185);
     margin-left: 135px;
 }
 
@@ -74,4 +74,15 @@ input {
     font-size: 16px;
     cursor: not-allowed;
     opacity: 0.5;
+}
+
+#footer {
+    position: fixed;
+    right: 0.5%;
+    bottom: 0.5%;
+    color: lightgray;
+}
+
+#footer a {
+    color: lightgray;
 }
