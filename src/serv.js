@@ -77,6 +77,10 @@ app.post("/api/sched", (req, res) => {
         })
 })
 
+app.get("/license", (req, res) => {
+    res.sendFile(path.join(__dirname, "license.html"))
+})
+
 app.listen(80, () => {
     console.log("Server started.")
 })
