@@ -154,9 +154,9 @@ endBtn.addEventListener("click", (e) => {
 
 const modal = document.getElementById("im");
 document.getElementById("ati").addEventListener("mouseover", (e) => {
-    modal.style.display = "block"
+    modal.show();
 })
 
 document.getElementById("ati").addEventListener("mouseleave", (e) => {
-    modal.style.display = "none"
+    modal.hide();
 })
