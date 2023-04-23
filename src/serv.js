@@ -38,7 +38,7 @@ app.post("/api/sched", (req, res) => {
     if (!regex.test(endpoint)) return res.send({ error: true, message: "Invalid endpoint!" })
 
 
-    console.log(`Fetching to endpoint ${endpoint}... \nDay: ${day} \nTeacher: ${fname} ${lname} \nInterval: ${interval}`)
+    console.log(`Fetching to endpoint ${endpoint}... \nDay: ${day} \nTeacher: ${fname} ${lname} \nInterval: ${interval} \nToken: ${token.slice(0, 5)}...`)
     fetch("https://hpms.flexisched.net/clickToSched.php", {
         "headers": {
             "accept": "*/*",
