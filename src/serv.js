@@ -1,11 +1,19 @@
-const express = require("express");
-const path = require("path");
-const rateLimit = require('express-rate-limit')
+import express from 'express'
+import path from 'path'
+import rateLimit from 'express-rate-limit'
 
 const app = express();
+import fetch from 'node-fetch'
+
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, "stat")))
 app.use(express.json())
+
 
 const apiLimiter = rateLimit({
     windowMs: 5000,
