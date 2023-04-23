@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto-flexisched</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1>auto-flexisched</h1>
+    <p style="color: lightgray">A service to automate your class signups. created by a rice eater</p>
+
+    <hr style="width: 85%" align="left">
+
+    <div id="content">
+        <span class="dft-label" style="margin-left: 0 !important">Flexisched Endpoint</span>
+        <span class="dft-label">Teacher First Name</span>
+        <span class="dft-label">Teacher Last Name</span>
+        <span class="dft-label">Day (1/2)</span>
+        <span class="dft-label" style="margin-left: 200px">Interval - (in milliseconds, min 5000ms)</span>
+
+        <br>
+        <input type="text" id="endpoint" placeholder="Input endpoint..." value="https://hpms.flexisched.net"
+            style="margin-left: 0 !important">
+        <input type="text" id="teacher_fname" placeholder="Teacher first name..." value="Dandrea">
+        <input type="text" id="teacher_lname" placeholder="Teacher last name..." value="Patrick"
+            style="margin-left: 37px;">
+        <input type="number" id="day" placeholder="Day (1/2)" value="1" style="margin-left: 30px">
+        <input type="number" id="interval" placeholder="Interval (ms, min 5000ms)" value="5000" min="5000" style="margin-left: 26px">
+
+        <br><br><br>
+
+        <span style="color: gray;">Authentication Token (recieved from cookies)</span>
+
+        <br>
+
+        <input type="text" id="token" placeholder="Authentication Token" style="margin-left: 0 !important;">
+        
+        <br><br><br>
+
+        <button id="submit">Begin</button>
+        <button id="end" disabled="true">End</button>
+
+        <br><br><br>
+        <h2 style="color: lightgray;">Response</h2>
+
+        <div id="response-output">
+            <p>System: $ Waiting for user...</p>
+        </div>
+    </div>
+
+    <script src="https://forge.darthvader1925.repl.co/forge.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+
+</html>

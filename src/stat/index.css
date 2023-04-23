@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(32, 32, 32);
+    font-family: cursor, monospace;
+}
+
+h1 {
+    color: white;
+}
+
+hr {
+    margin-bottom: 55px;
+}
+
+#content {
+    padding-left: 25px;
+}
+
+input {
+    margin-top: 10px;
+    font-family: cursor, monospace;
+    height: 30px;
+    width: 250px;
+    font-size: 16px;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.5px solid white;
+    color: lightgray;
+    margin-left: 50px;
+}
+
+.dft-label {
+    color: gray;
+    margin-left: 135px;
+}
+
+#response-output {
+    font-size: 15.5px;
+    background-color: rgb(17, 17, 17);
+    height: 350px;
+    padding-top: 8px;
+    padding-left: 20px;
+    color: rgb(145, 141, 141);
+    overflow-y: scroll;
+}
+
+.res-error {
+    color: rgb(245, 66, 66);
+    font-weight: 600;
+}
+
+.res-finished {
+    color: rgb(189, 245, 247);
+}
+
+#submit {
+    color: white;
+    background-color: rgb(88, 154, 240);
+    font-family: cursor, monospace;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#end {
+    color: white;
+    background-color: red;
+    font-family: cursor, monospace;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
