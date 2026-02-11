@@ -47,7 +47,7 @@ app.post("/api/sched", (req, res) => {
 
 
     console.log(`Fetching to endpoint ${endpoint}... \nDay: ${day} \nTeacher: ${fname} ${lname} \nInterval: ${interval} \nToken: ${token.slice(0, 8)}...`)
-    fetch("https://hpms.flexisched.net/clickToSched.php", {
+    fetch("https://amador.flexisched.net/clickToSched.php", {
         "headers": {
             "accept": "*/*",
             "accept-language": "en-US,en;q=0.9",
